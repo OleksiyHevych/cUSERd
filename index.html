@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Page</title>
+    <title>Сторінка юзера</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -50,17 +50,16 @@
     </style>
 </head>
 <body>
-<h1>Information from Database</h1>
+<h1>Програма моделювання роботи автобусного парку.</h1>
 
-<h2>Buses in Park</h2>
+<h2>Автобуси у парку</h2>
 <table>
     <thead>
     <tr>
         <th>ID</th>
-        <th>Number</th>
-        <th>Driver Name</th>
-        <th>Route Number</th>
-        <th>In Park</th>
+        <th>Номер автобуса</th>
+        <th>Прізвище та ініціали водія</th>
+        <th>Номер маршруту</th>
     </tr>
     </thead>
     <tbody id="parkedBuses">
@@ -73,10 +72,9 @@
     <thead>
     <tr>
         <th>ID</th>
-        <th>Number</th>
-        <th>Driver Name</th>
-        <th>Route Number</th>
-        <th>In Park</th>
+        <th>Номер автобуса</th>
+        <th>Прізвище та ініціали водія</th>
+        <th>Номер маршруту</th>
     </tr>
     </thead>
     <tbody id="busesOnRoute">
@@ -97,7 +95,6 @@
                         <td>${bus.number}</td>
                         <td>${bus.driverName}</td>
                         <td>${bus.routeNumber}</td>
-                        <td>${bus.inpark ? 'Yes' : 'No'}</td>
                     `;
                     parkedBusesTable.appendChild(row);
                 });
@@ -115,7 +112,6 @@
                         <td>${bus.number}</td>
                         <td>${bus.driverName}</td>
                         <td>${bus.routeNumber}</td>
-                        <td>${bus.inpark ? 'Yes' : 'No'}</td>
                     `;
                     busesOnRouteTable.appendChild(row);
                 });
